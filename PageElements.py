@@ -27,7 +27,10 @@ class PageElement:
         print("You've clicked a useless page element")
 
     def onHover(self, screen):
-        print('Hovered!')
+        pass
+
+    def notHovered(self, screen):
+        pass
 
     def adjustToScreenSize(self, screenDims):
         #call on screen size adjust event?
