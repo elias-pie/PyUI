@@ -15,7 +15,6 @@ class PageElement:
         return False
     
     def wasHovered(self, mouse_pos):
-        mouse_pos = pygame.mouse.get_pos()
         if self.rect.collidepoint(mouse_pos):
             return True
         return False
