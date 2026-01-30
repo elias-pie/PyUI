@@ -53,7 +53,8 @@ class Window:
     def checkForHover(self, screen):
         mouse_pos = pygame.mouse.get_pos()
         for e in screen.elements[::-1]:
-            if e.wasHovered(mouse_pos):
-                e.onHover(screen)
-                return
-            
+            if pygame.mouse.get_focused() != False:
+                if e.wasHovered(mouse_pos):
+                    e.onHover(screen)
+                    return
+                    
