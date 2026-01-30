@@ -56,5 +56,9 @@ class Window:
             if pygame.mouse.get_focused() != False:
                 if e.wasHovered(mouse_pos):
                     e.onHover(screen)
+                else:
+                    e.notHovered(screen)
                     return
+
+
                     
